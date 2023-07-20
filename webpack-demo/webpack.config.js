@@ -32,6 +32,11 @@ module.exports = {
         ],
       },
       {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: 'eslint-loader',
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
