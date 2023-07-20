@@ -15,7 +15,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   optimization: {
@@ -26,9 +26,9 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
+          'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
       {

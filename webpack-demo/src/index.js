@@ -1,4 +1,3 @@
-
 import _ from 'lodash';
 import './style.scss';
 import icon from './icon.png';
