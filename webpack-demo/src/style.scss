@@ -1,0 +1,27 @@
+
+@import 'mixins';
+
+$t-color: red;
+$b-color : black;
+$bd-color : bisque;
+
+body {
+  background: $bd-color;
+}
+
+div {
+  height: 28vh;
+}
+
+.hello {
+  color: $b-color;
+  border: solid 2px $t-color;
+  width: 15vw;
+  padding: 0.5rem;
+  box-shadow: 0 0 0 0.5rem $t-color;
+  background-image: url('./icon.png');
+
+  @include font-face("MyFont", "./my-font.woff2", 600, "woff2");
+
+  font-family: "MyFont", sans-serif;
+}
